@@ -55,14 +55,14 @@ Os clientes chegam pelo API Gateway do [Auth Serverless](https://github.com/tiag
 
 ## 5. Stack técnica
 
-| Área | Tecnologias |
-|---|---|
-| Nuvem | AWS VPC, NAT Gateway, Amazon EKS 1.34, managed node group, ELB |
-| Orquestração | Kubernetes, Helm, metrics-server, HPA, PDB, probes |
-| IaC | Terraform ≥ 1.6, HCP Terraform (workspace de infraestrutura e de observabilidade por ambiente), providers AWS e New Relic |
-| Observabilidade | New Relic `nri-bundle` (infra, kube-state-metrics, kube-events, logging), APM Java, serverless, Synthetics, NRQL |
-| Automação | GitHub Actions, Bash, Python e PowerShell |
-| Qualidade e segurança | `terraform validate`, TFLint, yamllint, ShellCheck, actionlint, `unittest`, Trivy e Gitleaks |
+- **Nuvem:** AWS VPC, NAT Gateway, ELB
+- **Cluster:** Amazon EKS 1.34, com managed node group
+- **Orquestração:** Kubernetes, Helm, metrics-server, HPA, PDB, probes
+- **Infraestrutura:** Terraform ≥ 1.6, HCP Terraform (workspaces de infraestrutura e de observabilidade por ambiente), providers AWS e New Relic
+- **Observabilidade:** New Relic `nri-bundle` (infra, kube-state-metrics, kube-events, logging), APM Java, serverless, Synthetics, NRQL
+- **Automação:** GitHub Actions, Bash, Python e PowerShell
+- **Testes:** `terraform validate`, `unittest`
+- **Qualidade e segurança:** TFLint, yamllint, ShellCheck, actionlint, Trivy, Gitleaks
 
 ## 6. Observabilidade
 
