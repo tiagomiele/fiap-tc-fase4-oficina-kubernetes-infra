@@ -1,8 +1,8 @@
-> **Tech Challenge Fase 4 — `fiap-tc-fase4-oficina-kubernetes-infra`**
->
-> Rede, Amazon EKS, add-ons do cluster e observabilidade New Relic como código.
-
+> Documentação central da Challenge Fase 4 em: [fiap-tc-fase4-oficina-os-service](https://github.com/tiagomiele/fiap-tc-fase4-oficina-os-service).
+> 
 # Oficina Fase 4 — Kubernetes Infra
+
+> Rede, Amazon EKS, add-ons do cluster e observabilidade New Relic como código.
 
 ## 1. Objetivo de negócio
 
@@ -104,7 +104,7 @@ Os clientes chegam pelo API Gateway do [Auth Serverless](https://github.com/tiag
 
 Os limiares de homologação são mais folgados (erro 10%, P95 2000 ms, CPU/memória 85%). E-mail só com `notification_enabled = true`.
 
-### 6.4 Rastrear uma OS pela Saga
+### 6.4 Rastrear uma OS pela Saga Orquestrada
 
 Todos os serviços registram o mesmo `correlationId` da OS. No New Relic → **Logs** ou **Query your data**:
 
