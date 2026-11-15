@@ -1,3 +1,4 @@
+# Fase 4 - release 1.1
 resource "aws_cloudwatch_log_group" "eks" {
   name              = "/aws/eks/${local.name}/cluster"
   retention_in_days = var.cluster_log_retention_days
